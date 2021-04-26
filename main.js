@@ -18,6 +18,11 @@
         "9": "Nine"
     }
     
+    /**
+     * This function converts string of numbers into string of number in English
+     * @param {*} string : string of numbers
+     * @returns 
+     */
     function convertString(string){
             let output = ""
             for (let char of string) {
@@ -27,7 +32,10 @@
     }
     
     let output = ""
-    // convertString(string)
+    
+    /**
+     * parse the user input
+     */
     process.argv.forEach((val, index) => {
         if(index > 1){
             output += convertString(val)
